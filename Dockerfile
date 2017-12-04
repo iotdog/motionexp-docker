@@ -1,5 +1,6 @@
 FROM centos:7
 # install dependencies
+RUN yum install epel-release
 RUN yum install gcc-c++ git cmake make gtest-devel hdf5-devel lz4-devel -y
 
 # install flann library
